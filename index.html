@@ -50,5 +50,27 @@
         </div>
       </footer>
     </div>
+
+    <aside class="queue" id="queue"></aside>
+    <div class="menu" id="menu" hidden></div>
+    <div class="modal" id="modal" hidden>
+      <div class="box">
+        <h3>Nova playlist</h3>
+        <input
+          id="plName"
+          placeholder="Nome da playlist"
+          maxlength="40"
+          autocomplete="off"
+        />
+        <div class="acts">
+          <button class="pill ghost" id="plCancel">Cancelar</button
+          ><button class="pill" id="plOk">Criar</button>
+        </div>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <input type="file" id="file" accept="audio/*" multiple hidden />
+    <audio id="au" preload="auto"></audio>
+    <script src="script.js"></script>
   </body>
 </html>
