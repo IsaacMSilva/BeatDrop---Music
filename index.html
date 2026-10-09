@@ -1,38 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/24b4f604fc.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/24b4f604fc.js"
+      crossorigin="anonymous"
+    ></script>
     <title>BeatDrop - Music</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="app">
-        <aside class="side">
-            <nav class="nav">
-                <button data-nav="home" id="n-home"></button>
-                <button data-nav="search" id="n-search"></button>
-            </nav>
-            <div class="lib" id="lib"></div>
-        </aside>
+      <aside class="side">
+        <nav class="nav">
+          <button data-nav="home" id="n-home"></button>
+          <button data-nav="search" id="n-search"></button>
+        </nav>
+        <div class="lib" id="lib"></div>
+      </aside>
 
-        <main class="main" id="main">
-            <div class="top" id="top"></div>
-            <div class="content" id="view"></div>
-        </main>
+      <main class="main" id="main">
+        <div class="top" id="top"></div>
+        <div class="content" id="view"></div>
+      </main>
 
-        <footer class="player">
-            <div class="np" id="np"></div>
-            <div class="ctl"></div>
-            <div class="btns">
-                <button id="bShuf" title="Aleatório"></button>
-                <button id="bPrev" title="Anterior"></button>
-                <button id="bPlay" class="pp" title="Play/Pause"></button>
-                <button id="bNext" title="Próxima"></button>
-                <button id="bRep" title="Repetir"></button>
-            </div>
-        </footer>
+      <footer class="player">
+        <div class="np" id="np"></div>
+        <div class="ctl">
+          <div class="btns">
+            <button id="bShuf" title="Aleatório"></button>
+            <button id="bPrev" title="Anterior"></button>
+            <button id="bPlay" class="pp" title="Play/Pause"></button>
+            <button id="bNext" title="Próxima"></button>
+            <button id="bRep" title="Repetir"></button>
+          </div>
+          <div class="pr">
+            <span id="tc">0:00</span
+            ><input type="range" id="seek" min="0" max="1000" value="0" /><span
+              id="td"
+              >0:00</span
+            >
+          </div>
+        </div>
+        <div class="vol">
+          <button id="bQueue" title="Fila de reprodução"></button>
+          <button id="bMute"></button>
+          <input type="range" id="vol" min="0" max="100" value="70" />
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
